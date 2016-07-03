@@ -26,7 +26,7 @@ void list_destroy(List *list) {
         }
     }
 
-    memset(list, 0, sizeof(list));
+    memset(list, 0, sizeof(List));
 
     return ;
 }

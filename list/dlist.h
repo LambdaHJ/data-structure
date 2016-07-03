@@ -1,9 +1,7 @@
 /* dlist.h */
 
-#ifndef DLIST_H
-#define DLIST_H
-
-#include<stdio.h>
+#ifndef dlist_h
+#define dlist_h
 
 typedef struct DListElmt_
 {

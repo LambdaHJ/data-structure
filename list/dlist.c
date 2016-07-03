@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 #include "dlist.h"
 
@@ -13,9 +14,9 @@ void dlist_init(DList *list, void (*destroy)(void *data))
 
 void dlist_destroy(DList *list)
 {
-    void *data;
+    void *data = NULL;
 
-    while (dlist_szie(list) > 0)
+    while (dlist_size(list) > 0)
     {
         if (list->destroy != NULL && dlist_remove(list, dlist_tail(list), (void **)data) == 0)
         {
